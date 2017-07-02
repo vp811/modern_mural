@@ -378,4 +378,30 @@ register_sidebar( array(
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
 ));
+
+/*Add Header Image Logo*/
+$defaults = array(
+	'default-image'          => '',
+	'width'                  => 0,
+	'height'                 => 0,
+	'flex-height'            => false,
+	'flex-width'             => false,
+	'uploads'                => true,
+	'random-default'         => false,
+	'header-text'            => true,
+	'default-text-color'     => '',
+	'wp-head-callback'       => '',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => '',
+);
+add_theme_support( 'custom-header', $defaults );
+
+$args = array(
+	'width'         => 500,
+	'height'        => 60,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
+
 ?>
