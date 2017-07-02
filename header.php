@@ -15,36 +15,48 @@
         <header>
             <div class="row">
                 <div class="three columns">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-                    </a>
+                    <div class="header-logo">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+                        </a>
+                    </div>
                 </div>
 
                  <div class="six columns">
-                     <?php wp_nav_menu(array(
-                        'theme_location'     =>  'menu-top',
-                        'sort_column'        =>  'menu_order',
-                        'container_class'    =>  'menu-header'
-                         ));
-                     ?>
+                    <div class="header-menu">
+                         <?php wp_nav_menu(array(
+                            'theme_location'     =>  'menu-top',
+                            'sort_column'        =>  'menu_order',
+                            'container_class'    =>  'menu-header'
+                             ));
+                         ?>
+                    </div>
                  </div>
 
                  <div class="three columns">
-                    <?php dynamic_sidebar('Account Widget'); ?>
+                    <div class="header-account">
+                        <?php dynamic_sidebar('Account Widget'); ?>
+                    </div>
                  </div>
             </div>
 
           <div class="row">
+                <div class="four columns">
+                  <div class="header-searchbar">
+                      <?php dynamic_sidebar('Searchbar'); ?>
+                  </div>
+              </div>
+
             <div class="four columns">
-                <?php dynamic_sidebar('Social Media Icons Widget'); ?>
+                <div class="header-social">
+                    <?php dynamic_sidebar('Social Media Icons Widget'); ?>
+                </div>
             </div>
 
             <div class="four columns">
-                <?php dynamic_sidebar('Searchbar'); ?>
-            </div>
-
-            <div class="four columns">
-                <?php dynamic_sidebar('Upload'); ?>
+                <div class="header-upload">
+                    <?php dynamic_sidebar('Upload a Mural Header Widget'); ?>
+                </div>
             </div>
           </div>
 
