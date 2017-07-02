@@ -22,16 +22,26 @@
                     </div>
                 </div>
 
-                 <div class="six columns">
-                    <div class="header-menu">
-                         <?php wp_nav_menu(array(
-                            'theme_location'     =>  'menu-top',
-                            'sort_column'        =>  'menu_order',
-                            'container_class'    =>  'menu-header'
-                             ));
-                         ?>
-                    </div>
-                 </div>
+                <div class="six columns">
+                    <nav>
+                      <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                           <div class="header-menu">
+                                <?php wp_nav_menu(array(
+                                   'theme_location'     =>  'menu-top',
+                                   'sort_column'        =>  'menu_order',
+                                   'container_class'    =>  'menu-header'
+                                    ));
+                                ?>
+                           </div>
+                        </ul>
+                      </div>
+                    </nav>
+                </div>
 
                  <div class="three columns">
                     <div class="header-account">
@@ -42,10 +52,8 @@
 
           <div class="row">
                 <div class="four columns">
-                  <div class="header-searchbar">
                       <?php dynamic_sidebar('Searchbar'); ?>
-                  </div>
-              </div>
+                </div>
 
             <div class="four columns">
                 <div class="header-social">
