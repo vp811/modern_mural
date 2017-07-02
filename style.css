@@ -1,25 +1,15 @@
 /*
-Theme Name: Efren Vasquez Blank Theme
+Theme Name: Modern Mural Theme
 Theme URI:
-Author: Efren Vasquez
-Description: Blank theme for WIE course
+Author: Efren Vasquez & Caitlyn Zahn
+Description: Theme for Modern Mural
 Version: 0.1
 License: Open
-Text Domain: efren_vasquez_blank_template
+Text Domain: modern_mural_template
 */
 
 @import url("stylesheets/normalize.css");
 @import url("stylesheets/skeleton.css");
-
-@font-face {
-    font-family: 'header';
-    src: url(fonts/CaviarDreams.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'body';
-    src: url(fonts/Candara.ttf) format('truetype');
-}
 
 html,
 body {
@@ -60,25 +50,6 @@ a {
 }
 
 header {
-    max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.large-logo-widget,
-.mm-image-right,
-.slider-widget,
-.header-categories,
-.popular-murals-header,
-.menu-header {
-    text-align: center;
-}
-
-.menu ul {
-    text-align: center;
-}
-
-.menu ul li {
-    display: inline;
-    padding: 0% 2%;
 }
