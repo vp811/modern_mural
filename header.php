@@ -14,6 +14,17 @@
      <!-- Begin Header Div -->
         <header>
 
+            <div class="row">
+              <div class="twelve columns">
+                  <?php wp_nav_menu(array(
+                          'theme_location'     =>  'menu-top',
+                          'sort_column'        =>  'menu_order',
+                          'container_class'    =>  'menu-header'
+                      ));
+                  ?>
+              </div>
+            </div>
+
           <div class="row">
             <div class="four columns">
                 <div id="logo">
@@ -33,16 +44,6 @@
           </div>
 
 
-          <div class="row">
-            <div class="twelve columns">
-                <?php wp_nav_menu(array(
-                        'theme_location'     =>  'menu-header',
-                        'sort_column'        =>  'menu_order',
-                        'container_class'    =>  'menu-header'
-                    ));
-                ?>
-            </div>
-          </div>
         </header>
 
     <div class="border">
