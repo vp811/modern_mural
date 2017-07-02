@@ -301,8 +301,7 @@ add_theme_support('menus');
 function register_my_menus() {
   register_nav_menus(
     array(
-      'menu-left' => __( 'Menu Left' ),
-      'menu-right' => __( 'Menu Right' ),
+      'menu-top' => __( 'Menu Top' ),
       'menu-footer' => __( 'Menu Footer' ),
     )
   );
