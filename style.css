@@ -85,28 +85,44 @@ header {
 }
 
 #menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    position: absolute;
+    width: 100%;
+    margin: -105px 0 0 -51px;
+    padding: 19px;
+    padding-top: 95px;
+    background: #406979;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+    padding: 2% 0;
+    font-size: 1.4em;
+    border-bottom: 1px #ffffff solid;
 }
 
 #menuToggle input:checked ~ ul {
   transform: scale(1.0, 1.0);
   opacity: 1;
 }
+
+.menu-header {
+    text-align: center;
+}
+
+.menu-header ul {
+    list-style-type: none;
+}
+
+.menu-header a {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 .header-searchbar {
     display: none;
