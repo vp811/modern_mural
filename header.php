@@ -13,7 +13,11 @@
 <body>
      <!-- Begin Header Div -->
         <header>
-
+            <div class="row">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+                </a>
+            </div>
             <div class="row">
               <div class="twelve columns">
                   <?php wp_nav_menu(array(
