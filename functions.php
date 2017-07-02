@@ -13,6 +13,17 @@ register_sidebar( array(
 		'after_title' => '</h1>'
 	));
 
+/*------Upload a Mural Header Widget -----*/
+register_sidebar( array(
+		'name' => ('Upload a Mural Header Widget'),
+		'id' => 'upload-widget',
+		'description' => 'Upload a Mural Header Widget',
+		'before_widget' => '<div class="upload-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>'
+	));
+
 /*------Searchbar Header widget -----*/
 register_sidebar( array(
 		'name' => ('Searchbar'),
