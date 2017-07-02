@@ -14,27 +14,28 @@
      <!-- Begin Header Div -->
         <header>
             <div class="row">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-                </a>
-            </div>
-            <div class="row">
-              <div class="twelve columns">
-                  <?php wp_nav_menu(array(
-                          'theme_location'     =>  'menu-top',
-                          'sort_column'        =>  'menu_order',
-                          'container_class'    =>  'menu-header'
-                      ));
-                  ?>
-              </div>
+                <div class="three columns">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+                    </a>
+                </div>
+
+                 <div class="six columns">
+                     <?php wp_nav_menu(array(
+                        'theme_location'     =>  'menu-top',
+                        'sort_column'        =>  'menu_order',
+                        'container_class'    =>  'menu-header'
+                         ));
+                     ?>
+                 </div>
+
+                 <div class="three columns">
+                    <?php dynamic_sidebar('Account Widget'); ?>
+                 </div>
             </div>
 
           <div class="row">
             <div class="four columns">
-                <div id="logo">
-                    <a href="<?php $url = home_url('/'); echo $url; ?>"><h1>Home</h1>
-                    </a>
-                </div>
                 <?php dynamic_sidebar('Social Media Icons Widget'); ?>
             </div>
 
@@ -43,7 +44,7 @@
             </div>
 
             <div class="four columns">
-                <?php dynamic_sidebar('Account Widget'); ?>
+                <?php dynamic_sidebar('Upload'); ?>
             </div>
           </div>
 
