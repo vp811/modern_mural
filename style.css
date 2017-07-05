@@ -124,6 +124,8 @@ header {
 
 
 
-.header-searchbar {
+.header-searchbar,
+.header-account,
+.header-social {
     display: none;
 }
