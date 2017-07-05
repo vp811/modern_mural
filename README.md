@@ -9,7 +9,7 @@
 * [YouTube How to Install](https://www.youtube.com/watch?v=MHMV6tUuadA)
 
 ## Log into server Site
-* Visit https://www.efrenvasquez.com/test/wp-admin
+* Visit http://www.efrenvasquez.com/test/wp-admin
     * Use your login information
 
 ## How to change the Home Widgets
