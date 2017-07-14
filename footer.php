@@ -16,15 +16,6 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="twelve columns">
-                    <?php wp_nav_menu(array(
-                      'theme_location'     =>  'menu-footer',
-                			'sort_column'        =>  'menu_order',
-                			'container_class'    =>  'menu-footer'
-                		));
-                    ?>
-                </div>
         </footer>
     <?php wp_footer(); ?>
 </body>
