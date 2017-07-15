@@ -181,6 +181,17 @@ register_sidebar( array(
     'after_title'   => '</h3>'
 ));
 
+/*----Easy Install Image Right Desktop---*/
+register_sidebar( array(
+    'name'          => ('Easy Install Image Right Desktop'),
+    'id'            => 'easy-install-image-right-desktop',
+    'description'   => 'Easy Install Image Right Desktop',
+    'before_widget' => '<div class="easy-install-image-right-desktop">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+));
+
 /*----Green Image left---*/
 register_sidebar( array(
     'name'          => ('Green Image left'),

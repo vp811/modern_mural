@@ -52,8 +52,13 @@
         <div class="six columns">
             <?php dynamic_sidebar('Easy Install Text Left'); ?>
         </div>
+
+        <div class="six columns" id="hide-mobile">
+            <?php dynamic_sidebar('Easy Install Image Right Desktop'); ?>
+        </div>
+    </section>
 </div>
-        <div class="six columns">
+        <div class="six columns" id="hide-desktop">
             <?php dynamic_sidebar('Easy Install Image Right'); ?>
         </div>
     </section>

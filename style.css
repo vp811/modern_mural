@@ -345,7 +345,17 @@ div#sfsi_holder {
     line-height: 0;
 }
 
+/*hides desktop easy install image*/
+#hide-desktop {
+    display: none;
+}
+
 @media screen and (min-width:550px){
+/*hides full width easy install image*/
+
+    #hide-desktop {
+        display: none;
+    }
 /*Centers logo on header*/
     .header-logo {
         margin-left: 195%;
@@ -405,6 +415,33 @@ div#sfsi_holder {
     width: 190%;
     max-width: 2000px !important;
     padding-left: 8%;
+}
+
+/*resizes easy to install image*/
+.easy-install-image-right-desktop {
+    margin-top: 43%;
+}
+
+/*adds padding to easy to install text*/
+.easy-install-text-left {
+    padding-left: 10%;
+}
+
+.green-image-left {
+    margin-top: 69%;
+}
+
+.green-text-right p {
+    padding-right: 15%;
+}
+
+ul.product_list_widget img {
+    width: 24%;
+    margin-top: 0%;
+}
+
+ul.product_list_widget {
+    text-align: center;
 }
 
 }
