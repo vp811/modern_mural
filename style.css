@@ -126,8 +126,12 @@ header {
     display: none;
 }
 
+.header-logo {
+    margin-left: 41%;
+}
+
 .header-logo img {
-    width: 30%;
+    width: 16%;
     position: absolute;
 }
 
