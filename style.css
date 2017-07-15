@@ -242,3 +242,19 @@ ul.product_list_widget li a {
 .design-image-right {
     text-align: center;
 }
+
+/*Edits Footer on mobile */
+footer {
+    background: #406979;
+    color: white;
+}
+
+/*Hides Customer menu on mobile*/
+.footer-customer-navigation {
+    display: none;
+}
+
+/*footer menu*/
+ul#menu-menu-footer li {
+    display: inline;
+}
