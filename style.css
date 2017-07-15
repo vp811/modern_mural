@@ -344,3 +344,20 @@ div#sfsi_holder {
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
     line-height: 0;
 }
+
+@media screen and (min-width:550px){
+/*Centers logo on header*/
+    .header-logo {
+        margin-left: 195%;
+    }
+
+/*resizes shopping cart */
+    .header-account {
+        width: 35%;
+        float: right;
+        margin-top: 7%;
+        margin-right: -67%;
+        max-width: 43px;
+    }
+
+}
