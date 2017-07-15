@@ -303,3 +303,18 @@ ul#menu-menu-footer li a {
     background-color: #a5cb98;
     color: #406979;
 }
+
+/*centers social media icons*/
+.norm_row.sfsi_wDiv {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.footer-social-media {
+    text-align: center;
+}
+
+div#sfsi_holder {
+    display: none;
+}
