@@ -221,8 +221,20 @@ img.image.wp-image-29.attachment-medium.size-medium {
     display: none;
 }
 
+/*Popular Murals Images*/
 ul.product_list_widget li {
     list-style: none;
+    display: inline;
+}
+
+ul.product_list_widget img {
+    width: 49%;
+    height: auto;
+    margin-top: -3%;
+}
+
+ul.product_list_widget li a {
+    text-decoration: none;
 }
 
 /*Centers Upload your Mural image on the homepage*/
