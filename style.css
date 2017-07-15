@@ -435,13 +435,31 @@ div#sfsi_holder {
     padding-right: 15%;
 }
 
+/*resizes popular murals images*/
 ul.product_list_widget img {
     width: 24%;
     margin-top: 0%;
 }
 
+/*aligns popular mural images center*/
 ul.product_list_widget {
     text-align: center;
+}
+
+/*repositions upload mural image */
+.design-image-right {
+    margin-top: 84%;
+    padding-right: 14%;
+}
+
+.design-text-left h3 {
+    position: absolute;
+    padding-left: 4%;
+}
+
+.design-text-left p {
+    padding-top: 30%;
+    padding-left: 7%;
 }
 
 }
