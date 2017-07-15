@@ -165,10 +165,11 @@ header {
 
 /*Large Logo on home page*/
 .large-logo-widget {
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 4%;
+    text-align: center;
 }
 
 /*Centers Couch image on homepage*/
@@ -460,6 +461,11 @@ ul.product_list_widget {
 .design-text-left p {
     padding-top: 30%;
     padding-left: 7%;
+}
+
+/*changes the width of the footer*/
+footer .three.columns {
+    width: 95%;
 }
 
 }
