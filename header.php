@@ -74,5 +74,4 @@
 
     <div class="border">
     </div>
-<hr />
 <div class="container">
