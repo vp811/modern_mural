@@ -175,14 +175,16 @@ header {
     text-align: center;
 }
 
-/*category images home page*/
-.header-categories {
+/*Category and Popular Murals Headers on Home page*/
+.header-categories,
+.popular-murals-header {
     background-color: #406579;
     margin: 0 -15%;
     text-align: center;
     color: white;
 }
 
+/*category images home page*/
 .category_name {
     position: absolute !important;
 }
