@@ -365,6 +365,14 @@ div#sfsi_holder {
     padding-left: 12%;
     }
 
+    .mm-text-left h3 {
+    position: absolute;
+    }
+
+    .mm-text-left p {
+    padding-top: 24%;
+    }
+
 /*adds padding to the welcome section image */
     .mm-image-right {
     padding-right: 14%;
@@ -379,5 +387,24 @@ div#sfsi_holder {
     background: transparent;
     width: 25%;
     }
+
+/*gives padding to simple stencil text area*/
+    .ss-text-right {
+    width: 65%;
+    float: right;
+    padding-right: 6%;
+    margin-top: 12%;
+}
+
+/*Enlarges simple stencil logo*/
+.ss-image-left {
+    margin-top: 139%;
+}
+
+.ss-image-left img {
+    width: 190%;
+    max-width: 2000px !important;
+    padding-left: 8%;
+}
 
 }
