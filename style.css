@@ -469,3 +469,48 @@ footer .three.columns {
 }
 
 }
+
+@media screen and (min-width: 800px){
+    footer {
+        padding-top: 10%;
+    }
+
+    footer .three.columns {
+        width: 22%
+    }
+
+    .footer-customer-navigation,
+    .footer-nav-left h3 {
+        display: initial;
+    }
+
+    .footer-nav-left ul li {
+        display: block;
+    }
+
+    .footer-nav-left {
+        margin: 0% 0;
+        text-align: center;
+    }
+
+    ul#menu-menu-footer li a {
+        border-right: none;
+    }
+
+    .footer-ss-link img {
+        width: 55%;
+    }
+
+    ul#menu-customer-service a {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul#menu-customer-service li {
+        list-style-type: none;
+    }
+
+    footer h3 {
+        font-size: 189%;
+    }
+}

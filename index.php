@@ -80,14 +80,13 @@
         </div>
     </section>
 
-
+<div class="container">
     <section class="row">
         <div class="twelve columns">
             <?php dynamic_sidebar('Popular Murals Images'); ?>
         </div>
     </section>
 
-<div class="container">
     <section class="row">
         <div class="eight columns">
             <?php dynamic_sidebar('Design Your Own Text Left'); ?>
