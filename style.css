@@ -371,4 +371,13 @@ div#sfsi_holder {
     margin-top: 53%;
     }
 
+/*realigns category images on larger screens*/
+    .woocommerce_category_box .woocommerce_category_listings_box .single_list {
+    float: left;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    width: 25%;
+    }
+
 }
