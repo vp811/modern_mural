@@ -212,9 +212,22 @@ header {
     padding: 0 !important;
 }
 
+/* adds space before simple stencil logo on home page*/
+.ss-image-left {
+    margin-top: 25%;
+}
+
 /*Makes easy install image full width*/
 img.image.wp-image-29.attachment-medium.size-medium {
     width: 100%;
+}
+
+/*resizes and centers green logo */
+.green-image-left {
+    text-align: center;
+}
+.green-image-left img {
+    width: 50%;
 }
 
 /*Hides Product title from popular murals section*/
