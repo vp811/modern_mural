@@ -126,3 +126,8 @@ header {
 .header-social {
     display: none;
 }
+
+.header-logo img {
+    width: 30%;
+    position: absolute;
+}
