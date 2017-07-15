@@ -287,3 +287,19 @@ ul#menu-menu-footer li a {
 .footer-ss-link img {
     width: 45%;
 }
+
+/*Hides Searchbard title in footer*/
+.footer-searchbar label {
+    display: none;
+}
+
+.footer-searchbar {
+    margin-top: 15%;
+    text-align: center;
+}
+
+/*Changes search button background and font color*/
+.footer-searchbar input#searchsubmit {
+    background-color: #a5cb98;
+    color: #406979;
+}
