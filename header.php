@@ -38,6 +38,9 @@
                                    'container_class'    =>  'menu-header'
                                     ));
                                 ?>
+                            <div class="header-upload">
+                                <?php dynamic_sidebar('Upload a Mural Slideout Menu'); ?>
+                            </div>
                            </div>
                         </ul>
                       </div>
