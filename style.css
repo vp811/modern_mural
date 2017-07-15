@@ -255,6 +255,26 @@ footer {
 }
 
 /*footer menu*/
-ul#menu-menu-footer li {
+.footer-nav-left ul li {
     display: inline;
+}
+
+.menu-menu-footer-container {
+    text-align: center;
+}
+
+ul#menu-menu-footer li a {
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    padding-right: 1%;
+}
+
+/*Hides Navigation header on mobile*/
+.footer-nav-left h3 {
+    display: none;
+}
+
+.footer-nav-left {
+    margin: 10% 0;
 }
