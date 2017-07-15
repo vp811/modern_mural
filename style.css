@@ -130,3 +130,10 @@ header {
     width: 30%;
     position: absolute;
 }
+
+.header-account {
+    width: 9%;
+    float: right;
+    margin-top: -5%;
+    margin-right: 8%;
+}
