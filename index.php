@@ -52,12 +52,13 @@
         <div class="six columns">
             <?php dynamic_sidebar('Easy Install Text Left'); ?>
         </div>
-
+</div>
         <div class="six columns">
             <?php dynamic_sidebar('Easy Install Image Right'); ?>
         </div>
     </section>
 
+<div class="container">
     <section class="row">
         <div class="six columns">
             <?php dynamic_sidebar('Green Image left'); ?>

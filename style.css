@@ -211,6 +211,20 @@ header {
     padding: 0 !important;
 }
 
+/*Makes easy install image full width*/
+img.image.wp-image-29.attachment-medium.size-medium {
+    width: 100%;
+}
+
+/*Hides Product title from popular murals section*/
+.popular-murals-images span {
+    display: none;
+}
+
+ul.product_list_widget li {
+    list-style: none;
+}
+
 /*Centers Upload your Mural image on the homepage*/
 .design-image-right {
     text-align: center;
