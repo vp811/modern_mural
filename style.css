@@ -19,7 +19,7 @@ header {
 }
 
 
-
+/*Slide out menu for mobile*/
 #menuToggle {
   display: block;
   position: relative;
@@ -121,6 +121,7 @@ header {
     text-decoration: none;
 }
 
+/*Header for mobile*/
 .header-searchbar,
 .header-social {
     display: none;
@@ -143,6 +144,7 @@ header {
     margin-right: 8%;
 }
 
+/*Upload button in slideout menu*/
 .upload-widget-slideout .textwidget p {
     padding: 6%;
 }
@@ -160,6 +162,7 @@ header {
     text-decoration: none;
 }
 
+/*Large Logo on home page*/
 .large-logo-widget {
     width: 60%;
     margin-left: auto;
@@ -169,6 +172,13 @@ header {
 
 
 /*category images home page*/
+.header-categories {
+    background-color: #406579;
+    margin: 0 -15%;
+    text-align: center;
+    color: white;
+}
+
 .category_name {
     position: absolute !important;
 }
