@@ -132,9 +132,10 @@ header {
 }
 
 .header-logo img {
-    width: 16%;
+    width: 19%;
     position: absolute;
     z-index: 2;
+    max-width: 65px;
 }
 
 .header-account {
