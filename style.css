@@ -360,4 +360,15 @@ div#sfsi_holder {
         max-width: 43px;
     }
 
+/*adds padding to the welcome section text*/
+    .mm-text-left {
+    padding-left: 12%;
+    }
+
+/*adds padding to the welcome section image */
+    .mm-image-right {
+    padding-right: 14%;
+    margin-top: 53%;
+    }
+
 }
