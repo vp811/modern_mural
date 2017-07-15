@@ -183,19 +183,15 @@ header {
     border: 0;
     background: transparent;
     width: 50%;
-    margin-top: -14%;
 }
 
 .woocommerce_category_box .woocommerce_category_listings_box .single_list img {
     box-shadow: 0;
     margin: 0;
     width: 100%;
+    margin-top: -6%
 }
 
 .category_name {
     padding: 0 !important;
-}
-
-.woocommerce_category_box {
-    margin-top: 20%;
 }
