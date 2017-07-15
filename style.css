@@ -306,15 +306,28 @@ ul#menu-menu-footer li a {
 
 /*centers social media icons*/
 .norm_row.sfsi_wDiv {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+}
+
+.norm_row {
+    float: none;
 }
 
 .footer-social-media {
-    text-align: center;
+    text-align: center ;
 }
 
 div#sfsi_holder {
-    display: none;
+    display: none !important;
+}
+
+/*newsletter section*/
+.sfsi_subscribe_Popinner {
+    background-color: transparent !important;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    line-height: 0;
 }
