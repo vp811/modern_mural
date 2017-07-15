@@ -22,8 +22,8 @@ header {
 
 #menuToggle {
   display: block;
-  position: relative;
-  top: 16px;
+  position: absolute;
+  top: 63px;
   left: 0px;
   z-index: 1;
   -webkit-user-select: none;
