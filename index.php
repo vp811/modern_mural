@@ -24,12 +24,14 @@
         </div>
     </section>
 
+</div>
     <section class="row">
         <div class="twelve columns">
             <?php dynamic_sidebar('Categories'); ?>
         </div>
     </section>
 
+<div class="container">
     <section class="row">
         <div class="twelve columns">
             <?php dynamic_sidebar('Categories Images'); ?>
@@ -65,13 +67,14 @@
             <?php dynamic_sidebar('Green Text Right'); ?>
         </div>
     </section>
-
+</div>
     <section class="row">
         <div class="twelve columns">
             <?php dynamic_sidebar('Popular Murals'); ?>
         </div>
     </section>
 
+<div class="container">
     <section class="row">
         <div class="twelve columns">
             <?php dynamic_sidebar('Popular Murals Images'); ?>
