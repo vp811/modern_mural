@@ -211,3 +211,8 @@ header {
 .category_name {
     padding: 0 !important;
 }
+
+/*Centers Upload your Mural image on the homepage*/
+.design-image-right {
+    text-align: center;
+}
