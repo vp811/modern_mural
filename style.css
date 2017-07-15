@@ -170,6 +170,10 @@ header {
     padding-top: 4%;
 }
 
+/*Centers Couch image on homepage*/
+.mm-image-right {
+    text-align: center;
+}
 
 /*category images home page*/
 .header-categories {
