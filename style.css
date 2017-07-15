@@ -22,8 +22,8 @@ header {
 
 #menuToggle {
   display: block;
-  position: absolute;
-  top: 63px;
+  position: relative;
+  top: 16px;
   left: 0px;
   z-index: 1;
   -webkit-user-select: none;
@@ -122,7 +122,6 @@ header {
 }
 
 .header-searchbar,
-.header-account,
 .header-social {
     display: none;
 }
