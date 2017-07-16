@@ -16,9 +16,9 @@ register_sidebar( array(
 /*------Upload a Mural Header Widget -----*/
 register_sidebar( array(
 		'name' => ('Upload a Mural Header Widget'),
-		'id' => 'upload-widget',
+		'id' => 'upload-widget2',
 		'description' => 'Upload a Mural Header Widget',
-		'before_widget' => '<div class="upload-widget">',
+		'before_widget' => '<div class="upload-widget2">',
 		'after_widget' => '</div>',
 		'before_title' => '<h1>',
 		'after_title' => '</h1>'
@@ -100,8 +100,8 @@ register_sidebar( array(
     'description'   => 'MM Text Left',
     'before_widget' => '<div class="mm-text-left">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h1>',
+    'after_title'   => '</h1>'
 ));
 
 /*----Modern Mural Image Right widget---*/
@@ -122,8 +122,8 @@ register_sidebar( array(
     'description'   => 'Categories Header',
     'before_widget' => '<div class="header-categories">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
 ));
 
 /*----Categories Individual---*/
@@ -221,8 +221,8 @@ register_sidebar( array(
     'description'   => 'Popular Murals Header',
     'before_widget' => '<div class="popular-murals-header">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
 ));
 
 /*----Popular Murals Images---*/
@@ -336,6 +336,8 @@ function register_my_menus() {
     array(
       'menu-top' => __( 'Menu Top' ),
       'menu-footer' => __( 'Menu Footer' ),
+      'desktop-menu' => __( 'Desktop Menu' ),
+      'shopping-cart' => __( 'Shopping Cart' ),
     )
   );
 }

@@ -10,6 +10,184 @@ Text Domain: modern_mural_template
 
 @import url("stylesheets/normalize.css");
 @import url("stylesheets/skeleton.css");
+@font-face {
+    font-family: 'Jasmine Reminiscentse';
+    font-style: normal;
+    font-weight: normal;
+    src: url(public_html/modernmural/wp-content/themes/modernmural/fonts/JasmineReminiscentse.ttf);
+   /* src: local('Ataturk Regular'), url('font/ataturk.ttf') format('truetype'),
+    url('font/ataturk.woff') format('woff');*/
+}
+
+body {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+}
+
+/*font styles*/
+
+h1 {
+  font-family: 'Jasmine Reminiscentse', Tahoma, serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: "mr-eaves-xl-sans-narrow",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: .04em;
+}
+
+h3 {
+  font-family: "mr-eaves-xl-sans-narrow",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px;
+  letter-spacing: 0 !important;
+}
+
+h4 {
+  font-family: "mr-eaves-xl-sans-narrow",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+
+}
+
+h5 {
+  font-family: "mr-eaves-xl-sans-narrow",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+
+}
+
+h6 {
+  font-size: 18px;
+  font-family: "proxima-nova-condensed",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+}
+
+p {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+a {
+  font-family: "mr-eaves-xl-sans-narrow",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/*font weight*/
+.text--bold {
+  font-weight: 700;
+}
+
+
+
+/*buttons*/
+.button--primary, .button--secondary {
+  padding: 10px 20px;
+  display: inline-block;
+  font-family: "mr-eaves-xl-sans-narrow",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+.button--primary {
+  background-color: #A5CB98;
+}
+
+.button--secondary {
+  background-color: #406979;
+  border: 1px solid #FFFFFF;
+}
+
+.button--primary:hover, .button--secondary:hover {
+  box-shadow: 0px 0px 20px #231F21;
+  transition: all .5s ease-in-out;
+}
+
+/*text colors*/
+.text--white {
+  color: #FFFFFF;
+}
+
+.text--green {
+  color: #A5CB98;
+}
+
+.text--blue {
+  color: #406979;
+}
+
+.text--black {
+  color: #231F21;
+}
+
+.text--grey {
+  color: #A3B0B6;
+}
+
+.text--grey-dark {
+  color: #848587;
+}
+
+
+/*background colors*/
+.background--green {
+  background-color: #A5CB98;
+}
+
+.background--yellow {
+  background-color: #FCF4A1;
+}
+
+.background--blue {
+  background-color: #406979;
+}
+
+.background--white {
+  background-color: #FFFFFF;
+}
+
+.background--grey-base {
+  background-color: #A3B0B6;
+}
+
+.background--grey-dark {
+  background-color: #848587;
+}
+
+.background--black {
+  background-color: #231F21;
+}
+
+
+
+/*for template purposes*/
+
+.placeholder-div {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
 
 header {
     margin-left: auto;
@@ -85,7 +263,7 @@ header {
 
 #menu {
     position: absolute;
-    width: 100%;
+    width: 98%;
     margin: -105px 0 0 -51px;
     padding: 19px;
     padding-top: 95px;
@@ -185,11 +363,6 @@ header {
     color: white;
 }
 
-/*category images home page*/
-.category_name {
-    position: absolute !important;
-}
-
 .icon-double-angle-right icon-large pull-right {
     display: none;
 }
@@ -211,6 +384,7 @@ header {
 
 .category_name {
     padding: 0 !important;
+    display: none;
 }
 
 /* adds space before simple stencil logo on home page*/
@@ -270,7 +444,7 @@ footer {
 
 /*footer menu*/
 .footer-nav-left ul li {
-    display: inline;
+    display: block;
 }
 
 .menu-menu-footer-container {
@@ -280,13 +454,13 @@ footer {
 ul#menu-menu-footer li a {
     color: white;
     text-decoration: none;
-    border-right: 1px solid white;
-    padding-right: 1%;
+    border-bottom: 1px solid white;
 }
 
 /*Hides Navigation header on mobile*/
 .footer-nav-left h3 {
     display: none;
+    padding: 2% 26%;
 }
 
 .footer-nav-left {
@@ -347,16 +521,177 @@ div#sfsi_holder {
 }
 
 /*hides desktop easy install image*/
-#hide-desktop {
+#hide-desktop,
+.desktop-menu,
+.upload-widget2,
+li#menu-item-271,
+div#sidebar {
     display: none;
+}
+
+#about,
+#tips {
+    font-family: 'Jasmine Reminiscentse', Tahoma, serif;
+    font-size: 4.0em;
+    border-bottom: solid 2px #a3b0b6;
+}
+
+header.woocommerce-products-header {
+    background-color: transparent;
+}
+
+.products a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    line-height: 38px !important;
+}
+
+ul.products li {
+    list-style-type: none;
+}
+
+.shopping-cart {
+    margin-top: -17px;
+}
+.shopping-cart a {
+    color: white;
+}
+
+.shopping-cart ul li {
+    display: inline;
+}
+
+html {
+    margin-top: 0px !important;
+}
+
+/*product title*/
+.products h2 {
+    font-size: 29px;
+    color: #406979;
+}
+
+/*changes font of headers*/
+.mm-text-left h1,
+.ss-text-right h3,
+.easy-install-text-left h3,
+.green-text-right h3,
+.design-text-left h3 {
+    font-family: 'Jasmine Reminiscentse',sans-serif;
+    font-size: 3.5em;
+}
+
+/*change color of post page header*/
+div#post-thumbnails h2 {
+    font-size: 34px;
+    color: #406979;
+}
+
+/*single product price*/
+span.woocommerce-Price-amount.amount {
+    font-size: 24px;
+}
+
+/*single product image*/
+.woocommerce-product-gallery__image img {
+    width: 87%;
+    height: auto;
+}
+
+/*single product text box*/
+textarea#comment {
+    width: 100%;
+}
+
+/*Mural Name font size*/
+.summary.entry-summary h1 {
+    font-size: 54px;
+}
+
+/*recommended images*/
+ul.products img {
+    width: 100%;
+    height: auto;
+}
+
+/*recommended items price*/
+span.price {
+    color: #231f21;
+    margin-right: 5%;
+}
+
+/*product pages*/
+ul.page-numbers li {
+    display: inline;
+    padding: 0 6%;
+}
+
+/*add padding to ratings*/
+p.stars a {
+    padding: 0% 3%;
+}
+
+/*header in resources page*/
+h2.preparation {
+    color: white;
+    background-color: #406579;
+    text-align: center;
+}
+
+.menu-menu-footer-container {
+    margin-top: 11%;
+}
+
+.woocommerce_category_box .woocommerce_category_listings_box .single_list:hover {
+    background: none;
+}
+
+.woocommerce_category_box .woocommerce_category_listings_box .single_list .category_name {
+    color: #ffffff;
+    text-align: center;
+    max-width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.woocommerce_category_box .woocommerce_category_listings_box .single_list .category_name {
+    background: #a5cb98;
+}
+
+i.icon-double-angle-right.icon-large.pull-right {
+    display: none;
+}
+
+.category_name {
+    display: inherit;
+}
+
+.sfsi_subscription_form_field {
+    color: black;
+}
+
+div#post h3,
+header.woocommerce-products-header h1,
+h2#tips {
+    text-align: center;
+}
+
+header.woocommerce-products-header h1 {
+    border-bottom: 1px solid black;
+}
+}
+
+@media screen and (max-width: 799px){
+.soliloquy-container .soliloquy-caption {
+    display: none !important;
+}
 }
 
 @media screen and (min-width:550px){
 /*hides full width easy install image*/
-
     #hide-desktop {
         display: none;
     }
+
+
 /*Centers logo on header*/
     .header-logo {
         margin-left: 195%;
@@ -364,7 +699,7 @@ div#sfsi_holder {
 
 /*resizes shopping cart */
     .header-account {
-        width: 35%;
+        width: 50%;
         float: right;
         margin-top: 7%;
         margin-right: -67%;
@@ -376,8 +711,8 @@ div#sfsi_holder {
     padding-left: 12%;
     }
 
-    .mm-text-left h3 {
-    position: absolute;
+    .mm-text-left h1 {
+        position: absolute;
     }
 
     .mm-text-left p {
@@ -386,8 +721,8 @@ div#sfsi_holder {
 
 /*adds padding to the welcome section image */
     .mm-image-right {
-    padding-right: 14%;
-    margin-top: 53%;
+        padding-right: 14%;
+        margin-top: 33%;
     }
 
 /*realigns category images on larger screens*/
@@ -409,18 +744,18 @@ div#sfsi_holder {
 
 /*Enlarges simple stencil logo*/
 .ss-image-left {
-    margin-top: 139%;
+    margin-top: 85%;
 }
 
 .ss-image-left img {
     width: 190%;
-    max-width: 2000px !important;
+    max-width: 291px !important;
     padding-left: 8%;
 }
 
 /*resizes easy to install image*/
 .easy-install-image-right-desktop {
-    margin-top: 43%;
+    margin-top: 19%;
 }
 
 /*adds padding to easy to install text*/
@@ -429,7 +764,7 @@ div#sfsi_holder {
 }
 
 .green-image-left {
-    margin-top: 69%;
+    margin-top: 4%;
 }
 
 .green-text-right p {
@@ -449,7 +784,7 @@ ul.product_list_widget {
 
 /*repositions upload mural image */
 .design-image-right {
-    margin-top: 84%;
+    margin-top: 30%;
     padding-right: 14%;
 }
 
@@ -472,7 +807,7 @@ footer .three.columns {
 
 @media screen and (min-width: 800px){
     footer {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 
     footer .three.columns {
@@ -495,6 +830,7 @@ footer .three.columns {
 
     ul#menu-menu-footer li a {
         border-right: none;
+        border-bottom: none;
     }
 
     .footer-ss-link img {
@@ -511,6 +847,280 @@ footer .three.columns {
     }
 
     footer h3 {
-        font-size: 189%;
+        font-size: 150;
+    }
+
+    .green-text-right {
+        margin-top: 15%;
+    }
+
+    .green-image-left {
+        margin-top: 10%;
+    }
+
+    .desktop-menu,
+    .header-social,
+    .header-searchbar {
+        display: initial;
+    }
+
+    header {
+        height: 100px;
+        padding: 1% 0;
+    }
+
+    .header-searchbar form {
+        width: 108%;
+    }
+
+    .header-searchbar label {
+        display: none;
+    }
+
+    header .norm_row.sfsi_wDiv {
+        width: 100% !important;
+    }
+
+    .header-account {
+        width: 55%;
+        float: none;
+        margin-top: 0%;
+        margin-right: 0;
+        max-width: 43px;
+        margin-left: 1%;
+        position:absolute;
+    }
+
+    .header-logo img {
+        width: 19%;
+        position: absolute;
+        z-index: 2;
+        max-width: 100px;
+    }
+
+    .header-logo img {
+        width: 33%;
+        position: relative;
+    }
+
+    #menuToggle input,
+    #menu {
+        display: none;
+    }
+
+    #menuToggle span {
+        background: #406979;
+    }
+
+    #menuToggle {
+        top: -670px;
+    }
+
+    .desktop-menu ul li {
+        display: inline;
+    }
+
+    .desktop-menu ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .header-logo {
+        margin-left: 0%;
+    }
+
+    .header-upload {
+        background: transparent;
+        text-align: center;
+        width: 75%;
+        margin-left: auto;
+        margin-right: 0%;
+}
+
+    .upload-widget2 {
+        display: initial;
+    }
+    .upload-widget2 a {
+        color: white;
+        padding: 5% 7%;
+        max-width: 229px;
+        border-radius: 10px;
+        background: #a5cb98;
+    }
+
+    .desktop-menu ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        list-style-type: none;
+        width: 19%;
+        text-align: center;
+    }
+
+    div#desktop-top {
+        position: absolute;
+        margin-top: -3%;
+        width: 100%;
+    }
+
+    ul#menu-desktop-menu li a {
+        padding-right: 2%;
+        font-size: 1.5em;
+    }
+
+    .menu-desktop {
+    position: absolute;
+    left: 0;
+}
+    .menu-desktop {
+        width: 100%;
+    }
+
+    ul#menu-desktop-menu {
+        width: 100%;
+        text-align: center;
+}
+
+    header img.sfcm.sfsi_wicon {
+        width: 55%;
+        height: auto;
+    }
+
+    .sfsi_wicons.shuffeldiv {
+    margin: 0px -3%;
+}
+
+    .design-text-left p {
+        padding-top: 15%;
+    }
+
+    footer h3 {
+        border-bottom: solid white 2px;
+        text-align: center;
+    }
+
+
+
+    footer {
+        margin-top: 10%;
+    }
+
+    .shopping-cart {
+        margin-top: 4px;
+        width: 356%;
+    }
+
+    ul#menu-desktop-menu li a:active {
+        border-top: solid 3px blue;
+    }
+
+    .search_input.ui-menu.not_editing.not_selected input[type="text"] {
+        background-color: transparent;
+    }
+
+    div#search_box_container {
+        width: 60%;
+        float: right;
+    }
+
+    ul#menu-desktop-menu li a:active{
+        border-top: 3px solid #a5cb98;
+    }
+
+    .VS-search .VS-search-box {
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+    }
+
+    li#menu-item-271 {
+        display: initial;
+    }
+
+    nav.woocommerce-MyAccount-navigation ul li {
+        display: inline;
+        padding: 3%;
+    }
+
+    nav.woocommerce-MyAccount-navigation a {
+        color: #406979;
+    }
+
+    nav.woocommerce-MyAccount-navigation ul {
+        text-align: center;
+    }
+
+    div#post {
+        padding: 0% 5%;
+    }
+
+    header.woocommerce-Address-title.title {
+        background: transparent;
+    }
+
+    div#content {
+        padding: 0 5%;
+    }
+
+    ul.products img {
+        width: 25%;
+        height: auto;
+    }
+
+    ul.products img {
+        width: 60%;
+        height: auto;
+    }
+
+    ul.products li {
+        display: inline-block;
+    }
+
+    ul.products li {
+        width: 33%;
+    }
+
+    .slider-caption p {
+        background-color: #a5cb98;
+        margin: 3%;
+        padding: 3%;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    .slider-caption {
+        text-align: right !important;
+    }
+
+    .slider-button {
+        text-align: center;
+    }
+
+    p.slider-button {
+        background-color: #406979;
+        width: 46%;
+        float: right;
+    }
+
+    .soliloquy-container .soliloquy-caption {
+        width: 45% !important;
+        left: inherit !important;
+        top: 0;
+        bottom: inherit !important;
+        right: 0;
+        background: transparent !important;
+        max-width: 450px !important;
+    }
+
+    .woocommerce_category_box .woocommerce_category_listings_box .single_list {
+        float: left;
+        margin: 0;
+        border: 0;
+        background: transparent;
+        width: 25%;
+    }
+
+    /*aligns footer menu left*/
+    .menu-menu-footer-container ul {
+        text-align: left;
     }
 }

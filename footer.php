@@ -1,4 +1,6 @@
+</div>
         <footer >
+            <div class="container">
             <div class="row">
                 <div class="three columns">
                     <?php dynamic_sidebar('Main Footer Navigation Left'); ?>
@@ -14,6 +16,7 @@
                     <?php dynamic_sidebar('Footer Social Media'); ?>
                     <?php dynamic_sidebar('Footer Newsletter Signup'); ?>
                 </div>
+            </div>
             </div>
 
         </footer>

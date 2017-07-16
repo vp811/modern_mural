@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="
         <?php bloginfo('stylesheet_url'); ?>
     " />
+
+    <script src="https://use.typekit.net/ksi5iju.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
      <!-- Begin Header Div -->
@@ -25,6 +28,15 @@
 
                 <div class="six columns">
                     <nav>
+                        <div class="menu-desktop">
+                            <?php wp_nav_menu(array(
+                               'theme_location'     =>  'desktop-menu',
+                               'sort_column'        =>  'menu_order',
+                               'container_class'    =>  'desktop-menu'
+                                ));
+                            ?>
+                        </div>
+
                       <div id="menuToggle">
                         <input type="checkbox" />
                         <span></span>
@@ -50,11 +62,17 @@
                  <div class="three columns">
                     <div class="header-account">
                         <?php dynamic_sidebar('Account Widget'); ?>
+                        <?php wp_nav_menu(array(
+                           'theme_location'     =>  'shopping-cart',
+                           'sort_column'        =>  'menu_order',
+                           'container_class'    =>  'shopping-cart'
+                            ));
+                        ?>
                     </div>
                  </div>
             </div>
 
-          <div class="row">
+          <div class="row" id="desktop-top">
                 <div class="four columns">
                       <?php dynamic_sidebar('Searchbar'); ?>
                 </div>
